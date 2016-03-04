@@ -1,0 +1,13 @@
+<b>Title :</b>
+<p><%= @bookmark.title() %></p>
+
+<b>Genre : </b>
+<p><%= @bookmark.genre() %></p>
+
+<b>Description : </b>
+<p><%= @bookmark.description() %></p>
+
+<a href="/bookmark/<%= @bookmark.id %>/edit">Edit Your Bookmark</a>
+<form action="/bookmark/<%= @bookmark.id %>/delete" method="post">
+  <input type="submit" value="Delete"></input>
+</form>
