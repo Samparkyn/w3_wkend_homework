@@ -1,9 +1,12 @@
-<h2>Edit BookMark</h2>
+<h2>Edit BookMark <i class="fa fa-pencil fa-2x"></i></h2>
 
 <form action="/bookmark/<%= @bookmark.id %>" method="post">
 
 <label>Title:</label>
 <input type="text" name="title" value="<%= @bookmark.title %>">
+
+<label class="add_url">URL:</label>
+<input type="text" name="url" value="<%= @bookmark.url %>">
 
 <select name="genre">
   <option value="Social">Social</option>

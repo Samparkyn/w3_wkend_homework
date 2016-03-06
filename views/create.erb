@@ -1,4 +1,14 @@
-<%= @bookmark.title()%>
-<h5>Your Bookmark : </h5>
-<%= @bookmark.genre()%>
-<%= @bookmark.description()%>
+<h5>Your New Bookmark : </h5>
+
+<div class="box">
+  <p>Title:<br> <%= @bookmark.title()%></p>
+  <p>URL:<br> <%= @bookmark.url() %></p>
+  <p>Genre:<br> <%= @bookmark.genre()%></p>
+  <p>Description:<br> <%= @bookmark.description()%></p>
+</div>
+
+<p class="speech">As an elephant, I'll never forget your bookmarks!</p>
+
+<div class="elephant_pic">
+   <img src="images/elephant.jpg" height="200" width="200">
+</div>

@@ -2,8 +2,12 @@
 
 <% @bookmarks.each do |bookmark| %>
 
-  <b>Name :</b>
+<div class="box">
+  <b>Title :</b>
   <p><%= bookmark.title() %></p>
+
+  <b>URL :</b>
+  <p><%= bookmark.url() %></p>
 
   <b>Genre :</b>
   <p><%= bookmark.genre() %></p>
@@ -12,7 +16,8 @@
   <p><%= bookmark.description() %></p>
 
   <a href="/bookmark/<%= bookmark.id %>">View Bookmark</a>
+  </div>
 
-<hr>
+  <br>
 
 <% end %>

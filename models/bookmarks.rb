@@ -2,11 +2,12 @@ require('pg')
 
 class Bookmark
 
-  attr_reader(:title, :genre, :description, :id)
+  attr_reader(:title, :url, :genre, :description, :id)
 
   def initialize(options)
     @id = nil || options['id']
     @title = options['title']
+    @url = options['url']
     @genre = options['genre']
     @description = options['description']
   end
@@ -14,8 +15,9 @@ class Bookmark
   def save()
     sql = "INSERT INTO bookmarks (
     title,
+    url,
     genre,
-    description) VALUES ('#{@title}', '#{@genre}', '#{@description}')"
+    description) VALUES ('#{@title}', '#{@url}', '#{@genre}', '#{@description}')"
     Bookmark.run_sql(sql)
   end
 
@@ -34,8 +36,9 @@ class Bookmark
   def self.update(options)
     sql = "UPDATE bookmarks set
      title = '#{options['title']}',
+     url = '#{options['url']}',
      genre = '#{options['genre']}',
-     description = '#{options['description']}',
+     description = '#{options['description']}'
      WHERE id ='#{options['id']}'"
     Bookmark.run_sql(sql)
   end

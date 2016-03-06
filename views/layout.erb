@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sam's Bookmarks</title>
+  <title>Sam's Bookmarkz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 
-<h1>Book&Look Marks</h1>
-
 <body>
+<nav>
 
-<a href="/bookmark/new">Add a new BookMark</a>
+  <div class="go-left">
+    <div class="logo ">EleBookMarkz <i class="fa fa-bookmark-o"></i></div>
+  </div>
+  <div class="go-right">
+    <ul>
+      <li><a href="/bookmark">HOME</a></li>
+      <li><a href="/bookmarks">My EleBookMarkz</a></li>
+    </ul>
+  </div>
+
+</nav>
+
 
 <%= yield %>
 
+<div class="footer">
+  &copy; SP 2016
+</div>
 
 </body>
+
 </html>

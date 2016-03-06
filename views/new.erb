@@ -1,22 +1,31 @@
-<h2>Add a new BookMark</h2>
+<div class="background">
+<h2>Add A New BookMark <i class="fa fa-book"></i></h2>
 
 <form action="/bookmark" method="post">
 
-<label>Title:</label>
+<label class="add_title">Title:</label>
 <input type="text" name="title">
+
+<label class="add_url">URL:</label>
+<input type="text" name="url">
 
 <select name="genre">
   <option value="Social">Social</option>
+  <option value="Search">Search</option>
   <option value="News">News</option>
   <option value="Study">Study</option>
+  <option value="Programming">Programming</option>
   <option value="Fun/Things to Do">Fun/Things to Do</option>
   <option value="Interesting">Interesting</option>
+  <option value="Other">Other</option>
 </select>
 
-<label>Description :</label>
+<label class="add_description">Description :</label>
 <input type="text" name="description">
-
-<input type="submit" value="Add Bookmark">
-
+<br>
+<div><br>
+<input class="add_button" type="submit" value="Add Bookmark">
+</div>
 
 </form>
+</div>

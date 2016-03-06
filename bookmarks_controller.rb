@@ -4,6 +4,10 @@ require('sinatra/contrib/all') if development?
 require_relative('models/bookmarks')
 
 get '/bookmark' do
+  erb(:home)
+end
+
+get '/bookmarks' do
   @bookmarks = Bookmark.all()
   erb(:index)
 end
@@ -30,7 +34,7 @@ end
 
 post '/bookmark/:id' do
   @bookmark = Bookmark.update(params)
-  redirect to("/bookmark#{params[:id]}")
+  redirect to("/bookmark/#{params[:id]}")
 end
 
 post '/bookmark/:id/delete' do

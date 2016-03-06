@@ -1,0 +1,228 @@
+body {
+  background-image: url(images/elephants.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+nav {
+  height: 65px;
+}
+
+nav ul {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  line-height: 65px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: deepskyblue;
+  font-size: 14px;
+}
+
+.logo {
+  color: deepskyblue;
+  line-height: 65px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.go-left {
+  float: left;
+}
+
+.go-right {
+  float: right;
+}
+
+p {
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 18px;
+}
+
+h1 {
+  color: yellow;
+  text-shadow: 2px 2px black;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color: grey;
+}
+
+button {
+  background-color: deepskyblue;
+  color: white;
+  font-size: 20px;
+  margin: 100px;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+button:hover {
+    background-color: darkblue; /* Green */
+    color: white;
+}
+
+/* Bookmark/new */
+
+
+h2 {
+font-size: 35px;
+color: yellow;
+text-shadow: 3px 3px black;
+}
+
+.add_title {
+  font-size: 20px;
+  color: yellow;
+  text-shadow: 3px 3px black;
+}
+
+.add_url {
+  font-size: 20px;
+  color: yellow;
+  text-shadow: 3px 3px black;
+}
+
+.add_description {
+  font-size: 20px;
+  color: yellow;
+  text-shadow: 3px 3px black;
+}
+
+.add_button {
+  background-color: #FF9933;
+  color: yellow;
+  text-shadow: 2px 2px red;
+  font-size: 20px;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.add_button:hover {
+    background-color: #FF9933;
+    color: red;
+    text-shadow: 2px 2px yellow;
+}
+
+/* Show new bookmark added */
+h5 {
+  font-size: 25px;
+  color: yellow;
+  text-shadow: 3px 3px black;
+}
+
+.box {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #FFCC33),
+    color-stop(1, #FF9900)
+  );
+  background-image: -o-linear-gradient(bottom, #FFCC33 0%, #FF9900 100%);
+  background-image: -moz-linear-gradient(bottom, #FFCC33 0%, #FF9900 100%);
+  background-image: -webkit-linear-gradient(bottom, #FFCC33 0%, #FF9900 100%);
+  background-image: -ms-linear-gradient(bottom, #FFCC33 0%, #FF9900 100%);
+  background-image: linear-gradient(to bottom, #FFCC33 0%, #FF9900 100%);
+  border-radius: 8px;
+  width: 300px;
+  margin: auto;
+}
+
+.box p {
+  margin-right: 20px;
+  margin-left: 20px;
+  color: black;
+}
+
+img {
+   position: absolute;
+   top: 80%;
+   left: 25%;
+   width: 300px;
+   height: 300px;
+   margin-top: -250px; /* Half the height */
+   margin-left: -250px; /* Half the width */
+}
+
+p.speech
+{
+  position: absolute;
+  top: 10%;
+  right: 47%;
+  width: 380px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: orange;
+  border: 8px solid black;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+p.speech:before
+{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: black transparent transparent black;
+}
+
+p.speech:after
+{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 38px;
+  top: 100px;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  width: 80px;
+}
+
+.delete:hover {
+  background-color: darkred;
+  color: yellow;
+}
+
+.box a {
+  background-color: green;
+  color: white;
+}
